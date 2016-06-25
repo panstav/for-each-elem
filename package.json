@@ -1,5 +1,5 @@
 {
-  "version": "0.0.0",
+  "version": "0.0.1",
   "name": "@panstav/for-each-elem",
   "description": "[].forEach for HTML elements",
   "license": "MIT",
