@@ -8,6 +8,11 @@ function forEachElem(identifier, parent, fn){
 		parent = window.document;
 	}
 
+	// allow parent by selector
+	if (typeof(parent) === 'string'){
+		parent = window.document.querySelector(parent);
+	}
+
 	// resolve to an iterate-able list of elements
 	// identifier would be either a string pointer to elements that will be queried by for elements
 	// or a list which could be directly iterated with forEach, or something that can transformed to such a list
