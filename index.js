@@ -5,7 +5,7 @@ function forEachElem(identifier, parent, fn){
 	// normalize arguments
 	if (typeof(parent) === 'function'){
 		fn = parent;
-		parent = document;
+		parent = window.document;
 	}
 
 	// resolve to an iterate-able list of elements
